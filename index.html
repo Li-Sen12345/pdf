@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<button type="button" style="margin-left: 20px;width: 110px;" id="d3">合格证下载</button>
+	</body>
+	<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$('#d3').on('click', function() {
+			var a = $('<form action=""></form>');
+			a.attr('action', 'pdf/demo.pdf');
+			$('body').append(a)
+			console.log(a);
+			a[0].submit()
+		});
+	</script>
+</html>
